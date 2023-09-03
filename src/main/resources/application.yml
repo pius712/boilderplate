@@ -13,6 +13,9 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.MySQLDialect
+  jackson:
+    default-property-inclusion: non_null
+
 logging:
   level:
     org.hibernate.SQL: debug
