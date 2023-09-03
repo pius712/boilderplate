@@ -1,4 +1,4 @@
-package com.example.boilerplate.support.error;
+package com.example.boilerplate.core.support.error;
 
 import lombok.Getter;
 import org.springframework.boot.logging.LogLevel;
@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 @Getter()
 public enum CoreExceptionType implements ExceptionType {
 
-    MEETING_NOT_FOUND(HttpStatus.NOT_FOUND, ErrorCode.TEST, "에러 발생", LogLevel.WARN);
+    NOT_FOUND(HttpStatus.NOT_FOUND, ErrorCode.TEST, "에러 발생", LogLevel.WARN);
 
     CoreExceptionType(HttpStatus httpStatus, ErrorCode errorCode, String errorMessage, LogLevel logLevel) {
         this.httpStatus = httpStatus;

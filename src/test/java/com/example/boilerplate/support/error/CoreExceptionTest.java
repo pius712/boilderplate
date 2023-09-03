@@ -1,5 +1,8 @@
 package com.example.boilerplate.support.error;
 
+import com.example.boilerplate.core.support.error.CoreException;
+import com.example.boilerplate.core.support.error.CoreExceptionType;
+import com.example.boilerplate.core.support.error.TypeException;
 import org.junit.jupiter.api.Test;
 
 class CoreExceptionTest {
@@ -18,9 +21,8 @@ class CoreExceptionTest {
     }
 
     static class TestSut {
-
         public void foo() {
-            throw new CoreException(CoreExceptionType.MEETING_NOT_FOUND);
+            throw new CoreException(CoreExceptionType.NOT_FOUND);
         }
     }
 }

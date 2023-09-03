@@ -1,10 +1,11 @@
-package com.example.boilerplate.support.error;
+package com.example.boilerplate.core.support.error;
 
 import org.springframework.boot.logging.LogLevel;
 import org.springframework.http.HttpStatus;
 
 public interface ExceptionType {
     HttpStatus getHttpStatus();
+
     ErrorCode getErrorCode();
 
     String getErrorMessage();

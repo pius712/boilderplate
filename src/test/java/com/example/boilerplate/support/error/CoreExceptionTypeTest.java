@@ -1,16 +1,15 @@
 package com.example.boilerplate.support.error;
 
+import com.example.boilerplate.core.support.error.CoreExceptionType;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class CoreExceptionTypeTest {
 
     @Test
     void test() {
-        CoreExceptionType exceptionType = CoreExceptionType.MEETING_NOT_FOUND;
+        CoreExceptionType exceptionType = CoreExceptionType.NOT_FOUND;
 
-        Assertions.assertThat(exceptionType).isEqualTo("hi");
+        Assertions.assertThat(exceptionType).isEqualTo("NOT_FOUND");
     }
 }
